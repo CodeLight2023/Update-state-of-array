@@ -5,7 +5,7 @@ function MyComponent() {
         const newFood = document.getElementById('foodInput').value;
         document.getElementById('foodInput').value = "";
 
-        setFood(prevFood => [...foods, newFood])
+        setFood(prevFood => [...prevFood, newFood])
     }
     function handleRemoveFood(index) {
         setFood(foods.filter((element, i) => i !== index));
